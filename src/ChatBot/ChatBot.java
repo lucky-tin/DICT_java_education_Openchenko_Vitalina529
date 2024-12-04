@@ -8,7 +8,7 @@ public class ChatBot {
         String botName = "Shadow Fiend";
 
         // Визначте поточний рік
-        int birthYear = 2023;
+        int birthYear = 2024;
 
         // Створіть сканер для введення з клавіатури
         Scanner scanner = new Scanner(System.in);
@@ -42,3 +42,14 @@ public class ChatBot {
         // Запитайте користувача про число, до якого він хоче порахувати
         System.out.println("Now I will prove to you that I can count to any number you want!");
         System.out.println("Enter a positive number:");
+
+        // Отримайте число від користувача
+        int userInp = scanner.nextInt();
+
+        // Почніть підрахунок від 0
+        int i = 0;
+
+        // Повторюйте, поки i не досягне введеного числа
+        while (i <= userInp) {
+            // Виведіть поточне число
+            System.out.println(i + "!");
